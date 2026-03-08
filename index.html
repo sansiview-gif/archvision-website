@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ARCHVISION - Professional Architecture Visualization Studio, providing architectural rendering, interior design visualization, VR experience and more">
+    <meta name="keywords" content="architecture visualization, 3D rendering, interior design, architectural rendering">
+    <title>ARCHVISION | Professional Architecture Visualization Studio</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-text">ARCHVISION</span>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#works" class="nav-link" data-lang="nav-works">作品</a></li>
+                <li><a href="#services" class="nav-link" data-lang="nav-services">服务</a></li>
+                <li><a href="#about" class="nav-link" data-lang="nav-about">关于</a></li>
+                <li><a href="#contact" class="nav-link" data-lang="nav-contact">联系</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="lang-toggle" id="langToggle">中文</button>
+                <button class="menu-toggle" id="menuToggle" aria-label="菜单">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav-links">
+            <li><a href="#works" class="mobile-nav-link" data-lang="nav-works">作品</a></li>
+            <li><a href="#services" class="mobile-nav-link" data-lang="nav-services">服务</a></li>
+            <li><a href="#about" class="mobile-nav-link" data-lang="nav-about">关于</a></li>
+            <li><a href="#contact" class="mobile-nav-link" data-lang="nav-contact">联系</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-slider" id="heroSlider">
+            <div class="hero-slide active">
+                <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1920&q=80" alt="现代建筑">
+            </div>
+            <div class="hero-slide">
+                <img src="https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=1920&q=80" alt="建筑外观">
+            </div>
+            <div class="hero-slide">
+                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80" alt="住宅设计">
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-subtitle" data-lang="hero-subtitle">建筑可视化工作室</p>
+                <h1 class="hero-title">
+                    <span class="line" data-lang="hero-line1">将建筑</span>
+                    <span class="line" data-lang="hero-line2">转化为</span>
+                    <span class="line accent" data-lang="hero-line3">视觉艺术</span>
+                </h1>
+                <p class="hero-description" data-lang="hero-description">
+                    我们专注于创造令人惊叹的建筑效果图，将设计理念转化为令人难忘的视觉体验
+                </p>
+                <div class="hero-actions">
+                    <a href="#works" class="btn btn-primary" data-lang="hero-btn1">浏览作品</a>
+                    <a href="#contact" class="btn btn-outline" data-lang="hero-btn2">开始合作</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-dots" id="heroDots">
+            <button class="dot active" data-slide="0"></button>
+            <button class="dot" data-slide="1"></button>
+            <button class="dot" data-slide="2"></button>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span data-lang="scroll-text">向下滚动</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-lang="services-label">我们的服务</span>
+                <h2 class="section-title" data-lang="services-title">专业领域</h2>
+                <p class="section-desc" data-lang="services-desc">提供全方位的建筑可视化解决方案</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 21h18M5 21V7l8-4 8 4v14M8 21v-9a2 2 0 012-2h4a2 2 0 012 2v9"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title" data-lang="service-1-title">建筑外观渲染</h3>
+                    <p class="service-desc" data-lang="service-1-desc">高精度建筑外立面可视化，展现设计理念与材质细节</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <path d="M3 9h18M9 21V9"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title" data-lang="service-2-title">室内空间表现</h3>
+                    <p class="service-desc" data-lang="service-2-desc">逼真的室内渲染，呈现空间氛围与家具陈设</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 2a14.5 14.5 0 000 20 14.5 14.5 0 000-20"/>
+                            <path d="M2 12h20"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title" data-lang="service-3-title">360°全景体验</h3>
+                    <p class="service-desc" data-lang="service-3-desc">沉浸式VR全景展示，让客户身临其境感受设计</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title" data-lang="service-4-title">建筑动画漫游</h3>
+                    <p class="service-desc" data-lang="service-4-desc">动态视频展示，全方位呈现建筑空间关系</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Works Section -->
+    <section class="section works" id="works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-lang="works-label">精选项目</span>
+                <h2 class="section-title" data-lang="works-title">作品展示</h2>
+            </div>
+            
+            <div class="works-filter">
+                <button class="filter-btn active" data-filter="all" data-lang="filter-all">全部</button>
+                <button class="filter-btn" data-filter="residential" data-lang="filter-residential">住宅</button>
+                <button class="filter-btn" data-filter="commercial" data-lang="filter-commercial">商业</button>
+                <button class="filter-btn" data-filter="cultural" data-lang="filter-cultural">文化</button>
+                <button class="filter-btn" data-filter="landscape" data-lang="filter-landscape">景观</button>
+            </div>
+            
+            <div class="works-grid">
+                <div class="work-item" data-category="residential">
+                    <div class="work-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80" alt="山水之间">
+                    </div>
+                </div>
+
+                <div class="work-item" data-category="commercial">
+                    <div class="work-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80" alt="都市天际">
+                    </div>
+                </div>
+
+                <div class="work-item" data-category="cultural">
+                    <div class="work-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=800&q=80" alt="艺术殿堂">
+                    </div>
+                </div>
+
+                <div class="work-item" data-category="landscape">
+                    <div class="work-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80" alt="绿意盎然">
+                    </div>
+                </div>
+
+                <div class="work-item" data-category="residential">
+                    <div class="work-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" alt="静谧居所">
+                    </div>
+                </div>
+
+                <div class="work-item" data-category="commercial">
+                    <div class="work-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80" alt="创新中心">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-label" data-lang="about-label">关于我们</span>
+                    <h2 class="section-title" data-lang="about-title">专业团队，卓越品质</h2>
+                    <p class="about-text" data-lang="about-text-1">
+                        ARCHVISION 成立于2018年，是一家专注于建筑视觉表现的工作室。我们相信，优秀的建筑可视化不仅仅是技术的展现，更是艺术与设计的完美融合。
+                    </p>
+                    <p class="about-text" data-lang="about-text-2">
+                        我们的团队由资深建筑师、3D艺术家和视觉设计师组成，致力于为客户提供从概念设计到最终呈现的全流程服务。每一个项目，我们都以极致的细节和独特的视角，将建筑的灵魂展现得淋漓尽致。
+                    </p>
+                    
+                    <div class="skills">
+                        <div class="skill-item">
+                            <span class="skill-name" data-lang="skill-1">3ds Max / V-Ray</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name" data-lang="skill-2">SketchUp / Enscape</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name" data-lang="skill-3">Unreal Engine 5</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name" data-lang="skill-4">Photoshop / Lightroom</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 92%"></div></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="150">0</div>
+                        <div class="stat-label" data-lang="stat-1">完成项目</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="80">0</div>
+                        <div class="stat-label" data-lang="stat-2">合作客户</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="6">0</div>
+                        <div class="stat-label" data-lang="stat-3">年行业经验</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="12">0</div>
+                        <div class="stat-label" data-lang="stat-4">专业团队</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-label" data-lang="contact-label">联系我们</span>
+                    <h2 class="section-title" data-lang="contact-title">开始合作</h2>
+                    <p class="contact-desc" data-lang="contact-desc">
+                        无论您是需要建筑效果图、室内设计可视化还是VR体验，我们都期待与您合作，将您的愿景变为现实。
+                    </p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span data-lang="contact-address">1266 Nanjing West Road, Jing'an District, Shanghai</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <span>hello@archvision.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                            </svg>
+                            <span>+86 21 1234 5678</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder=" " required>
+                            <label for="name" data-lang="form-name">您的姓名</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder=" " required>
+                            <label for="email" data-lang="form-email">电子邮箱</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder=" " required>
+                        <label for="subject" data-lang="form-subject">项目主题</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder=" " required></textarea>
+                        <label for="message" data-lang="form-message">项目描述</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="file" id="attachment" multiple accept=".jpg,.jpeg,.png,.pdf,.dwg,.skp,.max">
+                        <label for="attachment" class="file-label">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48"/>
+                            </svg>
+                            <span class="file-text" data-lang="form-attach">添加附件（可选）</span>
+                            <span class="file-hint" data-lang="form-attach-hint">支持 JPG, PNG, PDF, DWG, SKP, MAX 格式</span>
+                        </label>
+                        <div class="file-list" id="fileList"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" data-lang="form-submit">发送消息</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">ARCHVISION</a>
+                    <p class="footer-desc" data-lang="footer-desc">专业建筑可视化工作室，致力于将建筑设计转化为令人惊叹的视觉艺术作品。</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="微信">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 01.213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 00.167-.054l1.903-1.114a.864.864 0 01.717-.098 10.16 10.16 0 002.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 01-1.162 1.178A1.17 1.17 0 014.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 01-1.162 1.178 1.17 1.17 0 01-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.229 6.884 4.229.826 0 1.622-.12 2.361-.336a.722.722 0 01.598.082l1.584.926a.272.272 0 00.14.047c.134 0 .24-.111.24-.247 0-.06-.023-.12-.038-.177l-.327-1.233a.582.582 0 01-.023-.156.49.49 0 01.201-.398C23.024 18.48 24 16.82 24 14.98c0-3.21-2.931-5.837-6.656-6.088V8.89c-.135-.01-.27-.027-.407-.032zm-2.53 3.274c.535 0 .969.44.969.982a.976.976 0 01-.969.983.976.976 0 01-.969-.983c0-.542.434-.982.97-.982zm4.844 0c.535 0 .969.44.969.982a.976.976 0 01-.969.983.976.976 0 01-.969-.983c0-.542.434-.982.969-.982z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="微博">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10.098 20.323c-3.977.391-7.414-1.406-7.672-4.02-.259-2.609 2.759-5.047 6.74-5.441 3.979-.394 7.413 1.404 7.671 4.018.259 2.6-2.759 5.049-6.737 5.439l-.002.004zM9.05 17.219c-.384.616-1.208.884-1.829.602-.612-.279-.793-.991-.406-1.593.379-.595 1.176-.861 1.793-.601.622.263.82.972.442 1.592zm1.27-1.627c-.141.237-.449.353-.689.253-.236-.09-.313-.361-.177-.586.138-.227.436-.346.672-.24.239.09.315.36.18.573h.014zm.176-2.719c-1.893-.493-4.033.45-4.857 2.118-.836 1.704-.026 3.591 1.886 4.21 1.983.64 4.318-.341 5.132-2.179.8-1.793-.201-3.642-2.161-4.149zm7.563-1.224c-.346-.105-.579-.18-.405-.649.381-1.025.42-1.909.003-2.54-.781-1.188-2.924-1.123-5.383-.034 0 0-.768.334-.571-.271.378-1.207.32-2.217-.267-2.8-1.333-1.32-4.878.047-7.915 3.052C2.469 10.066 1.5 11.869 1.5 13.38c0 2.896 3.713 4.656 7.345 4.656 4.763 0 7.927-2.768 7.927-4.965 0-1.33-1.122-2.086-1.713-2.422zm.776-3.085c-.691-.803-1.708-1.1-2.655-.964-.344.05-.566.366-.515.71.05.345.365.567.71.516.539-.079 1.091.088 1.467.525.376.438.493 1.003.325 1.52-.099.334.091.685.425.784.334.099.685-.091.784-.425.302-1.003.076-2.137-.541-2.666zm2.1-2.333c-1.512-1.758-3.738-2.409-5.811-2.111-.345.05-.58.364-.53.709.05.345.364.58.709.53 1.576-.23 3.218.27 4.339 1.574 1.121 1.304 1.441 3.008.863 4.519-.12.327.047.691.374.811.327.12.691-.047.811-.374.729-2.004.323-4.207-1.065-5.658h.31z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Behance">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14H15.97c.13 3.211 3.483 3.312 4.588 2.029h3.168zm-7.686-4h4.965c-.105-1.547-1.136-2.219-2.477-2.219-1.466 0-2.277.768-2.488 2.219zm-9.574 6.988H0V5.021h6.953c5.476.081 5.58 5.444 2.72 6.906 3.461 1.26 3.577 8.061-3.207 8.061zM3 11h3.584c2.508 0 2.906-3-.312-3H3v3zm3.391 3H3v3.016h3.341c3.055 0 2.868-3.016.05-3.016z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 data-lang="footer-links-1">快速链接</h4>
+                    <ul>
+                        <li><a href="#works" data-lang="footer-link-1">作品展示</a></li>
+                        <li><a href="#services" data-lang="footer-link-2">服务内容</a></li>
+                        <li><a href="#about" data-lang="footer-link-3">关于我们</a></li>
+                        <li><a href="#contact" data-lang="footer-link-4">联系方式</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 data-lang="footer-links-2">服务项目</h4>
+                    <ul>
+                        <li><a href="#" data-lang="footer-service-1">建筑外观渲染</a></li>
+                        <li><a href="#" data-lang="footer-service-2">室内空间表现</a></li>
+                        <li><a href="#" data-lang="footer-service-3">360°全景体验</a></li>
+                        <li><a href="#" data-lang="footer-service-4">建筑动画漫游</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-lang="footer-copyright">&copy; 2024 ARCHVISION. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightboxClose">&times;</button>
+            <button class="lightbox-nav lightbox-prev" id="lightboxPrev">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="15,18 9,12 15,6"></polyline>
+                </svg>
+            </button>
+            <button class="lightbox-nav lightbox-next" id="lightboxNext">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9,18 15,12 9,6"></polyline>
+                </svg>
+            </button>
+            <img src="" alt="" class="lightbox-image" id="lightboxImage">
+            <div class="lightbox-info">
+                <h3 class="lightbox-title" id="lightboxTitle"></h3>
+                <p class="lightbox-category" id="lightboxCategory"></p>
+                <div class="lightbox-counter" id="lightboxCounter">1 / 6</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
